@@ -5,15 +5,17 @@
     string isContactUsActive = string.Equals(ViewBag.Active, "contactus", StringComparison.InvariantCultureIgnoreCase) ? "nav-link active current-page-active" : "nav-link";
     string isCareersActive = string.Equals(ViewBag.Active, "careers", StringComparison.InvariantCultureIgnoreCase) ? "nav-link active current-page-active" : "nav-link";
 }
+<link href="~/Content/header.css" rel="stylesheet" />
+
 <header id="header" class="header-effect-shrink" data-plugin-options="{&#39;stickyEnabled&#39;: true, &#39;stickyEffect&#39;: &#39;shrink&#39;, &#39;stickyEnableOnBoxed&#39;: true, &#39;stickyEnableOnMobile&#39;: false, &#39;stickyChangeLogo&#39;: true, &#39;stickyStartAt&#39;: 120, &#39;stickyHeaderContainerHeight&#39;: 90}" style="height: 139px;">
     <div class="header-body border-top-0 box-shadow-none" style="position: fixed;">
-        <div class="header-container container-xl-custom" style="height: 138px;padding:0 70px;">
+        <div id="header-new" class="header-container container-xl-custom">
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row">
-                        <div class="header-logo" style="width: 230px; height: 100px;">
+                        <div class="header-logo" id="headerlogo">
                             <a href="/">
-                                <img alt="Coditech" width="360" height="100" src="~/Content/Theme/images/logo.png">
+                                <img alt="Coditech" id="coditectLogo" src="~/Content/Theme/images/logo.png">
                             </a>
                         </div>
                     </div>
@@ -53,7 +55,7 @@
                                 </nav>
                             </div>
                             <button class="btn header-btn-collapse-nav" style="background:#fff;" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-                                <img height="30" width="30" src="~/Content/Theme/images/menu.png"/>
+                                <img height="30" width="30" src="~/Content/Theme/images/menu.png" />
                             </button>
                         </div>
                         <div class="d-none d-sm-inline-flex order-1 order-lg-2 ms-2">

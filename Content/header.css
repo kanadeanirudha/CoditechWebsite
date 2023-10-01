@@ -1,0 +1,63 @@
+﻿#header-new {
+    height: 138px;
+    padding: 0 70px;
+}
+#headerlogo {
+    width: 230px;
+    height: 100px;
+}
+#coditectLogo {
+    width :360px; 
+    height:100px;
+}
+
+@media only screen and (max-width: 600px) {
+    #header-new {
+        height: 138px;
+        padding: 0 30px;
+    }
+
+    #headerlogo {
+        width: 70px;
+        height: 30px;
+    }
+
+    #coditectLogo {
+        width: 200px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #header-new {
+        height: 138px;
+        padding: 0 20px;
+    }
+
+    #headerlogo {
+        width: 70px;
+        height: 30px;
+    }
+
+    #coditectLogo {
+        width: 170px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #header-new {
+        height: 138px;
+        padding: 0 20px;
+    }
+
+    #headerlogo {
+        width: 70px;
+        height: 30px;
+    }
+
+    #coditectLogo {
+        width: 240px;
+        height: 100px;
+    }
+}
