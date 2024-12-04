@@ -37,6 +37,21 @@ namespace CodiTech.Controllers
             ViewBag.Active = "careers";
             return View();
         }
+        public ActionResult PrivacyPolicy()
+        {
+            ViewBag.Active = "PrivacyPolicy";
+            return View();
+        }
+        public ActionResult CookiePolicy()
+        {
+            ViewBag.Active = "CookiePolicy";
+            return View();
+        }
+        public ActionResult TermsAndConditions()
+        {
+            ViewBag.Active = "TermsAndConditions";
+            return View();
+        }
 
         [HttpPost]
         public ActionResult SendEmail(ContactUsModel model)
